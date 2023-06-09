@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>点击改变</button>
+    <p>transition-property 性质转换对象</p>
+    <p>transition-duration 转换持续时间</p>
+    <hr />
+    <div class="container">
+      <div class="move ease">Ease(Default)</div>
+      <div class="move linear">Linear</div>
+      <div class="move ease_in">Ease-In</div>
+      <div class="move ease_out">Ease-Out</div>
+      <div class="move ease_in_out">Ease-In-Out</div>
+    </div>
+  </body>
+
+  <style>
+    button {
+      height: 90px;
+      width: 290px;
+      font-size: 28px;
+      color: white;
+      border: none;
+      background-color: blue;
+      transition-property: background-color; /*性质转换对象*/
+      transition-duration: 1000ms; /*转换持续时间*/
+    }
+    button:hover {
+      background-color: green;
+    }
+
+    .container {
+      width: 980px;
+    }
+    .move {
+      margin: 2em;
+      width: 150px;
+      height: 50px;
+      padding: 10px 15px;
+      background-color: red;
+      color: #fff;
+      line-height: 50px;
+      text-align: center;
+      font-size: 20px;
+      transition-property: translate();
+      transition-duration: 3s;
+    }
+    .ease {
+      transition-timing-function: ease;
+    }
+    .linear {
+      transition-timing-function: linear;
+    }
+    .ease_in {
+      transition-timing-function: ease-in;
+    }
+    .ease_out {
+      transition-timing-function: ease-out;
+    }
+    .ease_in_out {
+      transition-timing-function: ease-in-out;
+    }
+    .move:hover {
+      transform: translate(900px, 0);
+    }
+  </style>
+</html>
