@@ -27,12 +27,14 @@
       color: white;
       border: none;
       background-color: blue;
-      transition-property: background-color; /*性质转换对象*/
-      transition-duration: 1000ms; /*转换持续时间*/
+      /* transition-property: background-color; 性质转换对象
+      transition-duration: 1000ms; 转换持续时间 */
+      transition: background-color 3s ease-in-out 1s, color 2s ease 4s;
     }
     button:hover {
       background-color: green;
-      transition-delay: 2s; /*延迟生效*/
+      color: pink;
+      /* transition-delay: 2s; 延迟生效 */
     }
 
     .container {
