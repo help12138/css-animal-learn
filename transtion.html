@@ -32,6 +32,7 @@
     }
     button:hover {
       background-color: green;
+      transition-delay: 2s; /*延迟生效*/
     }
 
     .container {
@@ -51,19 +52,19 @@
       transition-duration: 3s;
     }
     .ease {
-      transition-timing-function: ease;
+      transition-timing-function: ease; /*默认状态*/
     }
     .linear {
-      transition-timing-function: linear;
+      transition-timing-function: linear; /*匀速改变*/
     }
     .ease_in {
-      transition-timing-function: ease-in;
+      transition-timing-function: ease-in; /*先慢后快*/
     }
     .ease_out {
-      transition-timing-function: ease-out;
+      transition-timing-function: ease-out; /*先快后慢*/
     }
     .ease_in_out {
-      transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out; /*快慢快*/
     }
     .move:hover {
       transform: translate(900px, 0);
